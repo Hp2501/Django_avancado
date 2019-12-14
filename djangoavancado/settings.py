@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 from decouple import config, Csv
+import dj_database_url
 from dj_database_url import parse as db_url
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -75,9 +76,15 @@ WSGI_APPLICATION = 'djangoavancado.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# PostgreSQL Heroku
 DATABASES = {
-    'default': config('DATABASE_URL', default='django.db.backends.postgresql', cast=db_url)
+    'default': dj_database_url.config()
 }
+
+# PostgreSQL Local
+# DATABASES = {
+#     'default': config('DATABASE_URL', default='django.db.backends.postgresql', cast=db_url)
+# }
 
 
 # Password validation
@@ -122,8 +129,11 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+LOGOUT_REDIRECT_URL = 'index'
+
+
 # Email teste Console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
 # Email Produção
