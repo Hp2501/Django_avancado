@@ -13,8 +13,8 @@ Desenvolvido com Django 3.0 - Python 3.8 - PostgreSQL 12.1
 ## Como rodar o projeto? ##
 
 ```
-git clone https://github.com/Hp2501/Django_avançado.git
-cd Django_avançado
+git clone https://github.com/Hp2501/Django_avancado.git
+cd Django_avancado
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
