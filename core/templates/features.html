@@ -7,22 +7,48 @@
             <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
         <div class="row">
-            {% for tec in tecnologias %}
 
             <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                {% for tec in tecnologias|slice:":3" %}
                 <div class="content-left">
-                    <div class="box-item wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="box-item wow fadeInLeft" data-wow-delay="0.6s">
                         <span class="icon">
                             <i class="{{ tec.icone }}"></i>
                         </span>
                         <div class="text">
-                            <h4>{{ tec.tecnologia }}</h4>
+                            <h4>{{ tec }}</h4>
                             <p>{{ tec.descricao }}</p>
                         </div>
                     </div>
                 </div>
+                {% endfor %}
             </div>
-            {% endfor %}
+
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                <div class="show-box wow fadeInUp" data-wow-delay="0.3s">
+                    <img src="{% static 'img/feature/intro-mobile.png' %}" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                {% for tec in tecnologias|slice:"3:" %}
+                <div class="content-right">
+                    <div class="box-item wow fadeInRight" data-wow-delay="0.3s">
+                        <span class="icon">
+                            <i class="{{ tec.icone }}"></i>
+                        </span>
+                        <div class="text">
+                            <h4>{{ tec }}</h4>
+                            <p>{{ tec.descricao }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
         </div>
     </div>
 </section>
