@@ -80,14 +80,14 @@ WSGI_APPLICATION = 'djangoavancado.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 # PostgreSQL Heroku
-# DATABASES = {
-#     'default': dj_database_url.config()
-# }
+DATABASES = {
+    'default': dj_database_url.config()
+}
 
 # PostgreSQL Local
-DATABASES = {
-    'default': config('DATABASE_URL', default='django.db.backends.postgresql', cast=db_url)
-}
+# DATABASES = {
+#     'default': config('DATABASE_URL', default='django.db.backends.postgresql', cast=db_url)
+# }
 
 
 # Password validation
