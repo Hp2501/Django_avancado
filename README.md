@@ -42,4 +42,5 @@ Obs: configurar o *__python-decouple__* e *__dj_database_url__*
 * Definindo templates
 * Definindo models
 * Forms e Class Based Views
+* Tests 
 * Deploy (Heroku)
