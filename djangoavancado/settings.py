@@ -33,13 +33,16 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', default=[], cast=Csv())
 # Application definition
 
 INSTALLED_APPS = [
+    'core',
+    'django_adminlte',
+    'django_adminlte_theme',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'core',
+
 ]
 
 MIDDLEWARE = [
