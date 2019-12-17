@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 {% block content %}
 
 <div id="hero-area" class="hero-area-bg">
@@ -7,10 +8,10 @@
         <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
                 <div class="contents">
-                    <h2 class="head-title">500<br>Erro no processamento</h2>
-                    <p>Ocorreu um erro no processamento da página.</p>
+                    <h2 class="head-title">500<br>{% {% trans "Erro no processamento" %} </h2>
+                    <p>{% trans "Ocorreu um erro no processamento da página." %} </p>
                     <div class="header-button">
-                        <a href="{% url 'index' %}" class="btn btn-common">Voltar para página inicial</i></a>
+                        <a href="{% url 'index' %}" class="btn btn-common">{% trans "Voltar para página inicial" %</i></a>
                     </div>
                 </div>
             </div>

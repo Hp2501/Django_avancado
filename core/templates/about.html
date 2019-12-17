@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <div class="about-area section-padding bg-gray">
     <div class="container">
@@ -7,8 +8,8 @@
                 <div class="about-wrapper wow fadeInLeft" data-wow-delay="0.3s">
                     <div>
                         <div class="site-heading">
-                            <p class="mb-3">Gerenciar estatísticas</p>
-                            <h2 class="section-title">Estatísticas detalhadas da sua empresa</h2>
+                            <p class="mb-3">{% trans "Gerenciar estatísticas" %}</p>
+                            <h2 class="section-title">{% trans "Estatísticas detalhadas da sua empresa" %}</h2>
                         </div>
                         <div class="content">
                             <p>
@@ -21,7 +22,7 @@
                                 ex sagittis, viverra nisl vel, rhoncus odio.
                             </p>
                             <a href="#" class="btn btn-common mt-3">
-                                Consulte Mais informação</a>
+                               {% trans " Consulte Mais informação"%}</a>
                         </div>
                     </div>
                 </div>

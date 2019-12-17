@@ -1,5 +1,5 @@
 {% load static %}
-
+{% load i18n %}
 
 <footer id="footer" class="footer-area section-padding">
     <div class="container">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="footer-titel">Produtos</h3>
+                    <h3 class="footer-titel">{% trans "Produtos" %} </h3>
                     <ul class="footer-link">
                         <li><a href="#">Tracking</a></li>
                         <li><a href="#">Application</a></li>
@@ -32,7 +32,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="footer-titel">Recursos</h3>
+                    <h3 class="footer-titel">{% trans "Recursos" %} </h3>
                     <ul class="footer-link">
                         <li><a href="#">Payment Options</a></li>
                         <li><a href="#">Fee Schedule</a></li>
@@ -42,7 +42,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                    <h3 class="footer-titel">Contato</h3>
+                    <h3 class="footer-titel">{% trans "Contato" %} </h3>
                     <ul class="address">
                         <li>
                             <a href="#"><i class="lni-map-marker"></i> 105 Madison Avenue - <br> Third Floor New York,
